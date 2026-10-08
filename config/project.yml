@@ -1,0 +1,28 @@
+project:
+  name: scalable-retail-lakehouse
+  random_seed: 42
+
+paths:
+  raw: data/raw
+  warehouse: data/warehouse
+  exports: data/exports
+  benchmarks: benchmarks
+
+spark:
+  master: local[*]
+  shuffle_partitions: 16
+  iceberg_version: "1.11.0"
+
+quality:
+  allowed_statuses:
+    - CREATED
+    - PAID
+    - SHIPPED
+    - DELIVERED
+    - CANCELLED
+  max_rejected_ratio: 0.02
+  max_duplicate_order_ids: 0
+
+generator:
+  start_date: "2024-01-01"
+  end_date: "2026-09-30"

@@ -1,0 +1,40 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+.DS_Store
+.idea/
+.vscode/
+logs/
+data/raw/
+data/warehouse/
+data/exports/
+data/duckdb/
+benchmarks/*.json
+dbt/target/
+dbt/dbt_packages/
+dbt/logs/
+
+# Virtual environments
+.venv/
+.venv-wsl/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Generated local data
+data/raw/
+data/warehouse/
+data/exports/
+data/duckdb/
+
+# dbt generated artifacts
+dbt/target/
+dbt/logs/
+
+# Secrets
+.env
+dbt/.user.yml

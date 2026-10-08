@@ -1,0 +1,13 @@
+# Example only. Keep credentials outside Git.
+retail_analytics:
+  target: aws
+  outputs:
+    aws:
+      type: redshift
+      host: "{{ env_var('REDSHIFT_HOST') }}"
+      user: "{{ env_var('REDSHIFT_USER') }}"
+      password: "{{ env_var('REDSHIFT_PASSWORD') }}"
+      port: 5439
+      dbname: analytics
+      schema: retail
+      threads: 4

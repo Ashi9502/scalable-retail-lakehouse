@@ -1,0 +1,29 @@
+{
+  "timestamp_utc": "2026-10-08T11:20:35.416059+00:00",
+  "orders": 497500,
+  "products": 2000,
+  "runs": 3,
+  "tests": {
+    "daily_aggregation_seconds": [
+      3.176,
+      0.904,
+      0.957
+    ],
+    "join_non_broadcast_seconds": [
+      1.646,
+      1.072,
+      0.853
+    ],
+    "join_broadcast_seconds": [
+      1.25,
+      0.947,
+      0.882
+    ]
+  },
+  "summary": {
+    "aggregation_median_seconds": 0.957,
+    "non_broadcast_join_median_seconds": 1.072,
+    "broadcast_join_median_seconds": 0.947,
+    "broadcast_join_improvement_pct": 11.66
+  }
+}
